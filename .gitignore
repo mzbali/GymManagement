@@ -1,0 +1,94 @@
+# .NET Core / ASP.NET Core
+**/obj/
+**/bin/
+*.user
+*.suo
+*.userosscache
+*.dll
+*.exe
+*.pdb
+*.json
+*.runtimeconfig.dev.json
+*.jfm
+*.bak
+*.tmp
+*.log
+*.vspscc
+*.vssscc
+*.pidb
+*.svclog
+*.scc
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Other
+*.swp
+*.swo
+*~
+
+# include in git for API
+!global.json
+!dotnet-tools.json
+
+# Ignore migation files
+# **/Migrations/*.cs
+
+# Client gitignore list
+
+# dependencies
+**/node_modules
+**/.pnp
+**/.pnp.js
+
+# testing
+**/coverage
+
+# next.js
+**/.next/
+**/out/
+
+# production
+**/build
+
+# misc
+**/.DS_Store
+**/*.pem
+
+# debug
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/.pnpm-debug.log*
+
+# local env files
+**/.env
+**/.env*.local
+
+# vercel
+**/.vercel
+
+# typescript
+**/*.tsbuildinfo
+**/next-env.d.ts
+
+# next-sitemap
+**/robots.txt
+**/sitemap.xml
+**/sitemap-*.xml
+
+# include in git for client
+!tsconfig.json
+!package.json
+!vercel.json
+
+# Ignore client folder .vscode
+client/.vscode/*
