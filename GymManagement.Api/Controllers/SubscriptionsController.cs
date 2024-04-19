@@ -16,10 +16,11 @@ public class SubscriptionsController:ControllerBase
     }
 
     [HttpPost]
-    public IActionResult CreateSubscription(CreateSubscriptionRequest request)
+    public async Task<IActionResult> CreateSubscription(CreateSubscriptionRequest request)
     {
         var command = new CreateSubscriptionCommand(request.SubscriptionType.ToString(), request.AdminId);
-        var response = _mediator.Send(command);
+        var subscriptionId = await _mediator.Send(command);
+        var response = new SubscriptionResponse(subscriptionId, request.SubscriptionType);
         return Ok(response);
     }
 }
