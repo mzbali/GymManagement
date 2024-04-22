@@ -7,7 +7,7 @@
 *.dll
 *.exe
 *.pdb
-*.json
+#*.json
 *.runtimeconfig.dev.json
 *.jfm
 *.bak
@@ -92,3 +92,8 @@
 
 # Ignore client folder .vscode
 client/.vscode/*
+
+# Ignore sqli files
+**/*.db-shm
+**/*.db-wal
+**/*.db
