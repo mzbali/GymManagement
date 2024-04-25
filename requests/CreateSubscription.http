@@ -1,6 +1,6 @@
 @Host=http://localhost:5000
 
-@adminId=2150e7b0-6b6b-4e3f-8f1d-3f6f3b7b0a67
+@adminId=a576fbd1-7f84-4575-8f6f-d2cc03ce1fe2
 
 POST {{Host}}/Subscriptions
 Content-Type: application/json

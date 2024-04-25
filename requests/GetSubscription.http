@@ -1,5 +1,5 @@
 @Host=http://localhost:5000
 
-@adminId=c820df4e-6b24-4698-95ac-784081f13d4b
+@subscriptionId=4a528f7e-70bd-4a06-8f76-bfa937bd9ea5
 
-GET {{Host}}/Subscriptions/{{adminId}}
+GET {{Host}}/Subscriptions/{{subscriptionId}}
