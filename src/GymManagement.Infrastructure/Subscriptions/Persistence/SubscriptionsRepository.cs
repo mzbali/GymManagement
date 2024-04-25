@@ -1,11 +1,10 @@
-using GymManagement.Domain.Subscription;
+using GymManagement.Domain.Subscriptions;
 using GymManagement.Application.Common.Interfaces;
 using GymManagement.Infrastructure.Common.Persistence;
-using Microsoft.EntityFrameworkCore;
 
 namespace GymManagement.Infrastructure.Subscriptions.Persistence;
 
-public class SubscriptionsRepository: ISubscriptionsRepository
+public class SubscriptionsRepository : ISubscriptionsRepository
 {
     private readonly GymManagementDbContext _dbContext;
 
